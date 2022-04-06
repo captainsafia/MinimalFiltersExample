@@ -32,7 +32,7 @@ app.Run();
 
 class ServiceAccessingRouteHandlerFilter : IRouteHandlerFilter
 {
-    private ILogger _logger;
+    private readonly ILogger _logger;
 
     public ServiceAccessingRouteHandlerFilter(ILoggerFactory loggerFactory)
     {
